@@ -1316,7 +1316,7 @@ function createContentElement_Type6(content, side, index, questionId) {
         contentEl = document.createElement("div");
         contentEl.innerText = content.value;
         contentEl.classList.add('question_type_6_text_content');
-        if (content.value.length > 1000000) {
+        if (content.value.length > 10) {
             contentIsNeedLoupe = true
             loupeClasses = loupeClasses + " resize_btn_type_6_text"
         }
@@ -1696,7 +1696,7 @@ function createContentElement_Type7(content, position, index, questionId) {
         contentEl.innerText = content.value;
         contentEl.classList.add('question_type_7_text_content');
         // Если текст длинный, добавляем кнопку лупы
-        if (content.value.length > 1000000) {
+        if (content.value.length > 10) {
             contentIsNeedLoupe = true
             loupeClasses = loupeClasses + " resize_btn_type_6_text"
         }

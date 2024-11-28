@@ -100,6 +100,11 @@ line{
     font-weight: 700;
     margin-bottom: 0px;
 }
+.italic_sign_1{
+    margin-top: -25px;
+    margin-bottom: 100px;
+    display: flex;
+}
 .plane_text{
     display: flex;
     flex-direction: column;
@@ -678,6 +683,12 @@ ul li div{
     margin-left: 25px;
     margin-right: 25px;
     width: 35%;
+}
+.test_image_7, .test_image_8{
+    max-width: 750px !important;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 40% !important;
 }
 .result_container{
     margin-left: 25px !important;
@@ -1625,7 +1636,7 @@ line{
         flex-direction: column;
     }
     .main_wrapper img{
-        width: 80%;
+        width: 80% !important;
         margin-bottom: 25px;
     }
     .answer_form_img{

@@ -41,7 +41,7 @@ body{
     width: 100%;
 }
 .popup_question p{
-    font-size: clamp(16px, 3vw, 25px) !important;
+    font-size: clamp(16px, 3vw, 30px) !important;
     color: rgb(255, 114, 118);
     font-weight: 700;
 }
@@ -95,7 +95,7 @@ body{
 .popup_content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #fff;
     color: #000;
     width: 90%;
@@ -265,6 +265,15 @@ body{
     display: flex; 
     flex-direction: column; 
     align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    height: 100% !important;
+}
+.question_type_1_body form{
+    height: 100% !important;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 .question_type_1_radio{
     display: flex;
@@ -273,6 +282,7 @@ body{
     width: auto;
     padding: 2vw;
     align-items: center;
+    flex-grow: 1;
 }
 .question_type_1_img, .question_type_1_vid{
     display: flex;
@@ -360,7 +370,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     height: 100%;
     flex-direction: row;
@@ -863,7 +873,7 @@ input[type='checkbox']:checked {
 .popup_result p{
     text-align: left;
     padding: 1vh;
-    font-size: 1.2vw;
+    font-size: clamp(16px, 1.5vw, 30px) !important;
     color: rgb(255, 114, 118);
     font-weight: 700;
 }
@@ -990,6 +1000,11 @@ input[type='checkbox']:checked {
     z-index: 10;
     transition-duration: .2s;
 }
+@media(max-width: 824px){
+    .question_type_1_answers{
+        justify-content: center !important;
+    }
+}
 .resize_btn_type_3{
     right: 0; 
 }
@@ -1060,7 +1075,7 @@ input[type='checkbox']:checked {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center !important;
+    justify-content: left !important;
     background-color: #ffffff00 !important;
     color: black !important;
     border-radius: 1.5vh;

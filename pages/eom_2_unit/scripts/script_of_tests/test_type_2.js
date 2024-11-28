@@ -59,7 +59,7 @@ function checkParagraph(){
         }
         imgElement.src = imageObj.image_path
         imgElement.alt = 'Test Image';
-        imgElement.className = 'test_image';
+        imgElement.className = `test_image_${currentPageIndex}`;
         mainWrapper.appendChild(imgElement);
     }
     contentDiv.appendChild(mainWrapper);
@@ -165,6 +165,8 @@ function checkParagraph(){
         document.getElementById('control_button_3').style.display = 'none';
         nextBtn.classList.remove('gray_dis');
         nextBtn.disabled = false;
+        backWardBtn.classList.remove('gray_dis');
+        backWardBtn.disabled = false;
         window.alert("Вы потратили все попытки для прохождения задания, кнопка 'Ответить' заблокирована!!!");
     }
     // ЭТО ДЛЯ ОШИБОК

@@ -93,7 +93,7 @@ function waitForData(){
                         if (item.image_path.includes(".mp4")){
                             checkTypeContent = ``;
                         } else {
-                            checkTypeContent = ` <i style='font-weight: normal;'>(для увеличения изображения дважды кликните на него)</i>`;
+                            checkTypeContent = ` <br><i style='font-weight: normal;' class='italic_sign_${currentPageIndex}'>(для увеличения изображения дважды кликните на него)</i>`;
                         }
                         imgElement.src = item.image_path;
                         imgElement.alt = 'image';
@@ -138,7 +138,7 @@ function waitForData(){
                         if (item.image_path.includes(".mp4")){
                             checkTypeContent = ``;
                         } else {
-                            checkTypeContent = ` <i style='font-weight: normal;'>(для увеличения изображения дважды кликните на него)</i>`;
+                            checkTypeContent = ` <br><i style='font-weight: normal;' class='italic_sign_${currentPageIndex}'>(для увеличения изображения дважды кликните на него)</i>`;
                         }
                         imgElement.src = item.image_path;
                         imgElement.alt = 'image';
