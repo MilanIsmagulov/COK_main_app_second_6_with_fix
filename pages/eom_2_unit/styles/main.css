@@ -2092,3 +2092,19 @@ line{
         width: 400px;
     }
 }
+
+p{
+    text-align: left !important;
+}
+
+.popup_window {
+    z-index: 18000 !important;
+}
+
+@media(max-width: 1180px){
+    .italic_sign_1 {
+        margin-top: -25px;
+        margin-bottom: 25px;
+        display: flex;
+    }
+}
