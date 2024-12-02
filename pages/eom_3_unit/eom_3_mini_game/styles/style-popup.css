@@ -1030,6 +1030,7 @@ input[type='checkbox']:checked {
     margin: 0 !important;
     width: 100%;
     position: relative;
+    overflow: scroll;
 }
 .question_type_6_body .question_type_6_pair {
     display: flex;
