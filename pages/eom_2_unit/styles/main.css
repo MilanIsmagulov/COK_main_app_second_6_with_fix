@@ -2108,3 +2108,7 @@ p{
         display: flex;
     }
 }
+
+.img_with_sgn p, .only_img p{
+    text-align: center !important;
+}
